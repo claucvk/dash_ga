@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background: #FFD86C;
+}
+header {
+  text-align: center;
+  background: #FFD86C;
+  border-radius: 12px;
+}
+h1 {
+  margin: -5px 0 0 0;
+  font-family: ;
+  font-size: 40px;
+  color: black;
+}
+hr {
+height: 10px;
+background: #146626;
+border-radius: 12px;
+}
+button {
+  margin: 0 auto;
+  position: relative;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 100px 0 100px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px black;
+}
+.veggie {
+  background: url("http://i.imgur.com/aaPEPKa.jpg");
+  background-size: cover;
+}
+.pesto {
+  background: url("http://i.imgur.com/PjL5pXh.jpg");
+  background-size: cover;
+}
+.specialty {
+  background: url("http://i.imgur.com/PupGrqO.jpg");
+  background-size: cover;
+}
+p {
+  font-size: 20px;
+  border-radius: 12px;
+  line-height: 24px;
+  color: white;
+  background: #146626;
+  background: linear-gradient(bottom, rgba(20,102,38,1), rgba(20,102,38,.6));
+  background: -webkit-linear-gradient(bottom, rgba(20,102,38,1), rgba(20,102,38,.6));
+  background: -moz-linear-gradientrgba(20,102,38,1), rgba(20,102,38,.6));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.price {
+  float: right;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+input {
+  border: 0px;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+input[type="button"] {
+  background: #CD3300;
+  color: white;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+  input {
+  font-size: 10px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<img src="http://i.imgur.com/Uz3znq7.png?1">
+<h1>Pancho's Pizza</h1>
+<hr>
+</header>
+<div class="veggie">
+  <p>Veggie Pizza  $14<span class="price"><input type="button" value="Start and Order" onclick="msg()"></span><br />
+  <small>Baby spinach, mushrooms,tofu, broccoli, eggplant, olives, tomato sauce and mozzarella cheese.</small></p>
+</div>
+
+<div class="pesto">
+  <p>Pesto Pizza $19<span class="price"><input type="button" value="Start and Order" onclick="msg()"></span><br />
+  <small>Mushrooms, tomato sauce, fresh garlic, grilled chicken, pesto sauce, prunes and mozzarella cheese.</small></p>
+</div>
+
+<div class="specialty">
+  <p>Specialty Pizza 16$<span class="price"><input type="button" value="Start and Order" onclick="msg()"></span><br />
+  <small>Fresh peppers, tomate sauce, barbecue suace, onions, mushrooms, pepperoni, parsley and olives.</small></p>
+</div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>
+</html>

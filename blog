@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Roboto" rel="stylesheet">
+    <style>
+      header {
+        text-align: center;
+        background: url("http://i.imgur.com/4CdfG9C.jpg");
+        background-size: cover;
+    }
+      ul {
+        background: #0d242d;
+        padding: 20px;
+    }
+
+      li {
+        display: inline;
+        padding: 5px 10px 5px 10px;
+        color: #d5e4ea;
+        font-family: 'Open Sans', monospace;
+        font-size: 18px;
+    }
+      img {
+        height: 210px;
+        width:  135px;
+        margin: 40px 0px 0px 0px;
+        }
+
+      h1 {
+        font-size: 50px;
+        font-family: 'League Script', cursive;
+        color: #040c0f;
+    }
+      h2 {
+        color: #040c0f;
+        font-family: 'Roboto', sans-serif;
+    }
+      a {
+        color: #efe6cf;
+    }
+
+      article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+      button {
+         background: #12303d;
+         color: #efe6cf;
+         border-radius: 10px;
+         padding: 5px 10px 5px 10px;
+    }
+
+      @media (max-width: 500px) {
+          h1 {
+          font-size: 36px;
+    }
+          li {
+          display: block;
+          padding: 5px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+    <img src="http://i.imgur.com/I8zIwHV.png">
+    <h1> Claudia Vargas' Blog</h1>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Recent Articles</a></li>
+      <li><a href="#">Most Popular</a></li>
+    </ul>
+    </header>
+    <article>
+      <h2>First steps to become a UX Designer</h2>
+      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+      <button>More</button>
+    </article>
+    <article>
+      <h2>How to learn UX Design</h2>
+      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+      <button>More</button>
+    </article>
+    <article>
+    <h2>GA vs LaunchCode</h2>
+      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+      <button>More</button>
+    </article>
+<script>
+  $("button").on("click", function() {
+    alert("clicked!")
+  });
+</script>
+  </body>
+</html>
